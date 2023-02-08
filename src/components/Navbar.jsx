@@ -19,14 +19,22 @@ const Navbar = () => {
       {/* navbar links */}
       <div className="hidden lg:flex justify-between">
         <ul className="flex justify-between gap-x-3">
-          <li className="cursor-pointer hover:border-b-2">About</li>
-          <li className="cursor-pointer hover:border-b-2">Speakers</li>
-          <li className="cursor-pointer hover:border-b-2">Agenda</li>
-          <li className="cursor-pointer hover:border-b-2">Informations</li>
+          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+            About
+          </li>
+          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+            Speakers
+          </li>
+          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+            Agenda
+          </li>
+          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+            Informations
+          </li>
         </ul>
       </div>
       {/* navbar buttons */}
-      <div className="flex">
+      <div className="flex fixed lg:relative">
         <button className="mr-2 hover:bg-gray-200">Visit Site</button>
         <button className="bg-[#E38C20] text-white flex items-center gap-x-[10px] hover:bg-[#eab87a] group">
           Register for Expo <BsChevronRight size={15} />
