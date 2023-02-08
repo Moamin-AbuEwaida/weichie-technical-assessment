@@ -3,7 +3,7 @@ import { BsChevronRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="w-full h-screen pt-8 px-16">
+    <div className="w-full pt-8 px-16">
       {/* upper part */}
       <div className="flex flex-col md:flex-row justify-between gap-3 py-16">
         {/* left side */}

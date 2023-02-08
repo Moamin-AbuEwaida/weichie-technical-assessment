@@ -19,29 +19,41 @@ const Navbar = () => {
       {/* navbar links */}
       <div className="hidden lg:flex justify-between">
         <ul className="flex justify-between gap-x-3">
-          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+          <li
+            className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
+            id="about"
+          >
             About
           </li>
-          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+          <li
+            className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
+            id="speakers"
+          >
             Speakers
           </li>
-          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
+          <li
+            className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
+            id="agenda"
+          >
             Agenda
           </li>
-          <li className="cursor-pointer hover:border-[#E38C20] hover:border-b-2 ">
-            Informations
+          <li
+            className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
+            id="information"
+          >
+            Information
           </li>
         </ul>
       </div>
       {/* navbar buttons */}
-      <div className="flex fixed lg:relative">
+      <div className="hidden lg:flex ">
         <button className="mr-2 hover:bg-gray-200">Visit Site</button>
         <button className="bg-[#E38C20] text-white flex items-center gap-x-[10px] hover:bg-[#eab87a] group">
           Register for Expo <BsChevronRight size={15} />
         </button>
       </div>
       {/* mobile menu */}
-      <div onClick={handelNav} className="z-30 lg:hidden right-3 fixed">
+      <div onClick={handelNav} className="z-30 lg:hidden right-6 fixed">
         {!nav ? (
           <HiMenuAlt3 className="z-20 cursor-pointer" size={25} />
         ) : (
@@ -58,23 +70,33 @@ const Navbar = () => {
             : "absolute top-0 h-screen left-[-100%] ease-in duration-500 z-10 "
         }
       >
-        <ul className="flex flex-col fixed w-full h-full items-center justify-center">
-          <li className="font-bold text-3xl p-8 cursor-pointer" id="about">
-            About
-          </li>
-          <li className="font-bold text-3xl p-8 cursor-pointer" id="speakers">
-            Speakers
-          </li>
-          <li className="font-bold text-3xl p-8 cursor-pointer" id="agenda">
-            Agenda
-          </li>
-          <li
-            className="font-bold text-3xl p-8 cursor-pointer"
-            id="information"
-          >
-            Information
-          </li>
-        </ul>
+        {/* buttons */}
+        <div className="flex items-center justify-center ">
+          <button className="mr-2 hover:bg-gray-200">Visit Site</button>
+          <button className="bg-[#E38C20] text-white flex items-center gap-x-[10px] hover:bg-[#eab87a] group">
+            Register for Expo <BsChevronRight size={15} />
+          </button>
+        </div>
+        {/* links */}
+        <div>
+          <ul className="flex flex-col fixed w-full h-full items-center justify-center">
+            <li className="font-bold text-3xl p-8 cursor-pointer" id="about">
+              About
+            </li>
+            <li className="font-bold text-3xl p-8 cursor-pointer" id="speakers">
+              Speakers
+            </li>
+            <li className="font-bold text-3xl p-8 cursor-pointer" id="agenda">
+              Agenda
+            </li>
+            <li
+              className="font-bold text-3xl p-8 cursor-pointer"
+              id="information"
+            >
+              Information
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
