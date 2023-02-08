@@ -23,25 +23,25 @@ const Navbar = () => {
             className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
             id="about"
           >
-            About
+            <a href="#about">About</a>
           </li>
           <li
             className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
             id="speakers"
           >
-            Speakers
+            <a href="#speakers">Speakers</a>
           </li>
           <li
             className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
             id="agenda"
           >
-            Agenda
+            <a href="#agenda">Agenda</a>
           </li>
           <li
             className="cursor-pointer hover:border-[#E38C20] hover:border-b-2"
             id="information"
           >
-            Information
+            <a href="#information">Information</a>
           </li>
         </ul>
       </div>

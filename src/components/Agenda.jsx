@@ -27,7 +27,7 @@ const events = [
 
 const Agenda = () => {
   return (
-    <div className="w-full p-8">
+    <div className="w-full p-8" id="agenda">
       {/* upper part */}
       <div>
         <h1 className="w-full text-center text-2xl">Our Agenda</h1>
