@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/weichie-technical-assessment/static/css/main.b6f4ee85.css",
+    "main.js": "/weichie-technical-assessment/static/js/main.b6ea08dd.js",
+    "index.html": "/weichie-technical-assessment/index.html",
+    "main.b6f4ee85.css.map": "/weichie-technical-assessment/static/css/main.b6f4ee85.css.map",
+    "main.b6ea08dd.js.map": "/weichie-technical-assessment/static/js/main.b6ea08dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6f4ee85.css",
+    "static/js/main.b6ea08dd.js"
+  ]
+}
